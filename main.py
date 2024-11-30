@@ -84,7 +84,7 @@ def get_arxiv_paper(query:str, start:datetime.datetime, end:datetime.datetime, d
                     i.arxiv_id = re.sub(r'v\d+$', '', i.get_short_id())
                     i.code_url = get_paper_code_url(i)
                     papers.append(i)
-                    if len(papers) == 5:
+                    if len(papers) == 2:
                         break
                 break
             except Exception as e:
